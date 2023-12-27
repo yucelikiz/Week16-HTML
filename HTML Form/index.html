@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+
+    <title>İletişim Formu</title>
+
+</head>
+
+<body>
+
+    <h2>Kullanıcı Bilgi Formu</h2>
+
+    <form action="#" method="post">
+
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" name="ad" required>
+
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" name="soyad" required>
+
+        <label for="email">E-Posta:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="parola">Parola:</label>
+        <input type="password" id="parola" name="parola" required>
+
+        <label>Cinsiyet:</label>
+        <input type="radio" id="erkek" name="cinsiyet" value="erkek" required>
+        <label for="erkek">Erkek</label>
+        <input type="radio" id="kadin" name="cinsiyet" value="kadin" required>
+        <label for="kadin">Kadın</label>
+
+        <label for="meyve">Favori Meyve:</label>
+        <select id="meyve" name="meyve" required>
+            <option value="elma">Elma</option>
+            <option value="muz">Muz</option>
+            <option value="cilek">Çilek</option>
+        </select>
+
+        <label for="mesaj">Mesajınız:</label>
+        <textarea id="mesaj" name="mesaj" rows="4" required></textarea>
+
+        <button type="submit">Gönder</button>
+
+    </form>
+
+</body>
+</html>
